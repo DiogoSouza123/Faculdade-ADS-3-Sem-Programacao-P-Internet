@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random</title>
+    </head>
+    <body>
+        <br>
+        <script>
+            var valor1 = Math.round(Math.random()*5)
+            var valor2 = Math.round(Math.random()*5)            
+            var valor3 = Math.round(Math.random()*5)
+            document.write(valor1+"--"+valor2+"--"+valor3)
+            
+            if(valor1===valor2&&valor2===valor3){
+                document.write("Você ganhou!")
+            }else{
+                document.write("Você perdeu :(")
+            }
+            
+        </script>
+    </body>
+</html>
