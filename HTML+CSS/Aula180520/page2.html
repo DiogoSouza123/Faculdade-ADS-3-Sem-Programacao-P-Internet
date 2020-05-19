@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Muda imagem do lado</title>
+    <style>
+        img {
+            border-radius: 8px;
+            background:black;
+            padding: 16px;
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        function mudar(imagens) {
+            var imagem = document.getElementById(imagens)
+            switch (imagens) {
+                case "1":
+                    imagem.src = "2.jpg";
+                    break;
+                case "2":
+                    imagem.src = "1.jpg"
+                    break;
+
+                case "3":
+                    imagem.src = "4.jpg"
+                    break;
+
+                case "4":
+                    imagem.src = "3.jpg"
+                    break;
+            }
+        }
+    </script>
+    <script>
+        function mudardenovo(imagens) {
+            var imagem = document.getElementById(imagens)
+            switch (imagens) {
+                case "1":
+                    imagem.src = "1.jpg";
+                    break;
+                case "2":
+                    imagem.src = "2.jpg"
+                    break;
+
+                case "3":
+                    imagem.src = "3.jpg"
+                    break;
+
+                case "4":
+                    imagem.src = "4.jpg"
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align = center>Clonar Imagem do Lado</h1>
+
+    <table align="center">
+        <tr>
+            <td width="300"><img src="1.jpg" width="200" width="180" id="1" onmouseover="javascript:mudar('1');"
+                    onmouseout="javascript:mudardenovo('1');"></td>
+            <td width="300"><img src="2.jpg" width="200" width="180" id="2" onmouseover="javascript:mudar('2');"
+                    onmouseout="javascript:mudardenovo('2');"></td>
+        </tr>
+        <tr>
+            <td width="300"><img src="3.jpg" width="200" width="180" id="3" onmouseover="javascript:mudar('3');"
+                    onmouseout="javascript:mudardenovo('3');"></td>
+            <td width="300"><img src="4.jpg" width="200" width="180" id="4" onmouseover="javascript:mudar('4');"
+                    onmouseout="javascript:mudardenovo('4');"></td>
+        </tr>
+    </table>
+    <h2 align= center>By: Diogo Souza</h2>
+</body>
+
+</html>
